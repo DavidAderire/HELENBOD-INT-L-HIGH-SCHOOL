@@ -1,0 +1,798 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: whitesmoke;
+}
+.intro{
+    display: flex;
+    flex-direction: row;
+    justify-content:center ;
+    align-items: center;
+    gap: 25px;
+    background-color: navy;
+    color: white;
+    padding: 20px;
+}
+.navbar{
+    display:none ;
+}
+.navcontainer{
+    padding: 20px;
+}
+.navcontainer img{
+    margin-top: 10px;
+}
+.nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+}
+.nav p{
+    font-size: 19px;
+    font-weight: 600;
+}
+/* hero section */
+.herosection{
+   display: flex;
+   flex-direction: column;
+   padding: 10px;
+}
+.heroinfo{
+   padding: 10px;
+}
+.heroinfo h1{
+    font-size: 50px;
+    margin-bottom: 20px;   
+}
+.heroinfo span{
+    color: navy;
+}
+.heroinfo p{
+    font-size: 20px;
+}
+.herolink{
+    padding: 30px 0px  0px 10px;
+}
+.herolink a{
+    font-size: 18px;
+    text-decoration: none;
+    color: black;
+    border: 2px solid black;
+    padding: 7px 20px;
+    border-radius: 50px;
+    transition: 0.3s;
+}
+.herolink a:hover{
+    background-color: red;
+    color:white;
+    border: none;
+}
+/* about section */
+.aboutcontainer{
+    display: flex;
+    flex-direction: column;
+}
+.aboutinfo{
+    padding: 35px 20px;
+}
+.aboutinfo h2{
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+.aboutinfo p{
+    font-size: 17px;
+}
+.aboutinfo1{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+    padding: 30px 0px 20px 0px;
+}
+ .aboutt{
+    display:flex ;
+    flex-direction: row ;
+    justify-content: center;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.about-1{
+    width:40%;
+    background-color: navy;
+    padding: 10px;
+    color: white;
+    border-radius: 10px;
+} 
+.about-1 h5{
+    font-size: 25px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 20px;
+}
+.about-1 p{
+    text-align: center;
+    font-size: 14px;
+    padding: 10px;
+}
+.about{
+    background-color:skyblue;
+    text-align: center;
+    padding: 25px;
+    color:white;
+    margin-bottom: 10px;
+}
+.about p{
+    font-size: 30px;
+}
+.about .span{
+    font-size: 38px;
+    font-weight: 700;
+} 
+.aboutinfo2{
+    text-align: center;
+    background-color:navy;
+    padding:20px 10px ;
+    height: 190px;
+    color:white;
+}
+.aboutinfo2 h6{
+    font-size: 25px;
+    padding: 10px 0 30px 0;
+}
+.aboutinfo3{
+    text-align: center;
+    background-color: skyblue;
+    color: white;
+    padding: 20px;
+}
+.aboutinfo3 h6{
+    font-size: 25px;
+    padding: 10px 0 30px 0;
+}
+/* contactsection */
+.contactinfo1{
+   padding: 20px;
+   margin-top: 20px;
+}
+.contactinfo1 span{
+    font-size: 22px;
+}
+.contactinfo1 h2{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 35px;
+    color:navy;
+}
+.contactinfo1 h5{
+    font-size: 18px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+.contactinfo1 p{
+    font-size: 17px;
+}
+.contactinfo2{
+    background-color: white;
+    border: 0.5px solid black;
+    border-radius: 10px;
+    margin: 15px;
+    padding: 20px;
+}
+.contactinfo2 form{
+    width: 100%;
+}
+form input, form textarea{
+    width: 100%;
+    border:0.5px solid black;
+    outline: none;
+    background-color: white;
+    padding: 13px;
+    margin: 13px 0;
+    color: black;
+    border-radius: 6px;
+}
+form button{
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 50px;
+    transition: 0.3s;
+}
+form button:hover{
+    background-color: black;
+    color: white;
+}
+.color{
+    color: red;
+}
+/* footercontainer */
+.footercontainer{
+    padding: 20px;
+    background-color: navy;
+    color: white;
+}
+.footimg{
+    margin: 20px;
+}
+.footer1{
+    margin: 20px;
+}
+.footer1 h5{
+   font-size: 24px;
+   margin-bottom: 14px;
+   margin-top: 40px;
+}
+.footer1 p{
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+.footer2{
+    margin: 20px;
+}
+.footer2 h5{
+    font-size: 22px;
+    margin-bottom: 10px;
+    margin-top: 40px;
+}
+.footer2 p{
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+.footer3{
+    margin: 20px;
+}
+.footer3 h5{
+    font-size: 22px;
+    margin-bottom: 10px;
+    margin-top: 40px;
+}
+.footer3 p{
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+@media screen and (min-width:700px) {
+    .intro{
+        display: flex;
+        justify-content: end;
+    }
+    .intro p{
+        margin-right: 20px;
+    }
+    .navcontainer{
+        display: flex;
+        flex-direction: row;
+    }
+    .nav p{
+        display: none;
+    }
+    .navbar{
+        display: flex;
+        gap: 40px;
+        margin-top: 40px;
+        margin-left: 30px;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .navlink{
+        text-decoration: none;
+        font-size: 20px;
+        color: black;
+    }
+    .button button{
+        color: white;
+        background-color: red;
+        border: none;
+        padding:10px 20px;
+        border-radius: 50px;
+        font-size: 13px;
+        transition: 0.3s;
+    }
+    .button button:hover{
+        background-color: black;
+        color: white;
+    }
+    /* herocontainer */
+    .herosection{
+        padding: 30px;
+    }
+    .heroinfo h1{
+        font-size:65px;
+    }
+    .heroinfo p{
+        font-size: 22px;
+    }
+    /* aboutcontainer */
+    .aboutinfo{
+        margin: 0px 30px;
+    }
+    .aboutinfo p{
+        font-size: 20px;
+    }
+    .about-1{
+        padding: 40px;
+    }
+    .about-1 img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 80px;
+    }
+    .aboutcon{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        padding:0 20px;
+    }
+    .aboutinfo2{
+        width: 100%;
+        height: 300px;
+        text-align: center;
+    }
+    .aboutimg{
+        padding:0 20px;
+    }
+    /* contactsection */
+    .contactsection{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+
+    .footercontainer{
+        display: flex;
+        flex-direction: row;
+    }
+    .footer3{
+        margin-right: 40px;
+    }
+    .footer3 p{
+        font-size: 12px;
+        margin-bottom: 20px;
+     }
+     .footimg{
+        margin-top: 60px;
+     }
+    }
+    @media screen and (min-width:1024px){
+        .intro p{
+            font-size: 23px;
+        }
+        .navbar{
+            display: flex;
+            gap: 90px;
+            margin-top: 40px;
+            margin-left: 50px;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .navlink{
+            text-decoration: none;
+            color: black;
+            font-size: 22px;
+        }
+        .button button{
+            color: white;
+            background-color: red;
+            border: none;
+            padding:10px 20px;
+            border-radius: 50px;
+            font-size: 17px;
+            transition: 0.3s;
+        }
+        .button button:hover{
+            background-color: black;
+            color: white;
+        }
+       .herosection{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+       }
+       .heroinfo{
+        text-align: center;
+        color: white;
+       }
+       .heroinfo h1{
+        font-size: 65px;
+       }
+       .heroinfo p{
+        font-size: 30px;
+       }
+       .background-clip{
+        position: absolute;
+        top: 40px;
+        bottom: 0;
+        z-index: -1;
+        margin-top: 250px;
+        width: 100%;
+       }
+       .herolink a{
+        font-size: 18px;
+        text-decoration: none;
+        color: white;
+        border: 2px solid white;
+        padding: 7px 20px;
+        border-radius: 50px;
+        transition: 0.3s;
+    }
+    .aboutinfo{
+        margin: 0px 30px;
+        margin-top: 160px;
+    }
+    .aboutinfo h2{
+        text-align: center;
+        font-size: 60px;
+    }
+    .aboutinfo p{
+        font-size: 23px;
+    }
+    .about-1{
+        padding: 70px;
+    }
+    .about-1 img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 120px;
+    }
+    .about-1 h5{
+        font-size: 34px;
+    }
+    .about-1 p{
+        font-size: 24px;
+    }
+    .about p{
+        font-size: 50px;
+    }
+    .about .span{
+        font-size: 50px;
+    }
+    .aboutcon{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        padding:0 20px;
+    }
+    .aboutinfo2{
+        width: 100%;
+        height: 330px;
+        text-align: center;
+    }
+    .aboutinfo2 h6{
+        font-size: 30px;
+    }
+    .aboutinfo2 p{
+        font-size: 24px;
+        margin-top: 23px;
+    }
+    .aboutinfo3 h6{
+        font-size: 30px;
+    }
+    .aboutinfo3 p{
+        font-size: 24px;
+    }
+    .aboutimg{
+        padding:0 20px;
+    }
+    /* contactsection */
+    .contactsection{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+    .contactinfo1 span{
+        font-size: 33px;
+    }
+    .contactinfo1 h2{
+        font-size: 45px;
+    }
+    .contactinfo1 h5{
+        font-size: 27px;
+    }
+    .contactinfo1 p{
+        font-size: 22px;
+    }
+    .contactinfo2{
+        background-color: white;
+        border: 0.5px solid black;
+        border-radius: 10px;
+        margin: 25px;
+        padding: 30px;
+        font-size: 23px;
+    }
+    .contactinfo2 form{
+        width: 100%;
+    }
+    form input, form textarea{
+        width: 100%;
+        border:0.5px solid black;
+        outline: none;
+        background-color: white;
+        padding: 16px;
+        margin: 16px 0;
+        color: black;
+        border-radius: 6px;
+    }
+    form button{
+        background-color: red;
+        color: white;
+        border: none;
+        padding: 10px;
+        border-radius: 50px;
+        transition: 0.3s;
+        font-size: 17px;
+    }
+    form button:hover{
+        background-color: black;
+        color: white;
+    }
+    .color{
+        color: red;
+    }
+    .footercontainer{
+        display: flex;
+        flex-direction: row;
+    }
+    .footer1 h5{
+        font-size: 25px;
+    }
+    .footer1 p{
+        font-size: 20px;
+    }
+    .footer2 h5{
+        font-size: 25px;
+    }
+    .footer2 p{
+        font-size: 20px;
+    }
+    .footer3{
+        margin-right: 40px;
+    }
+    .footer3 h5{
+        font-size: 25px;
+    }
+    .footer3 p{
+        font-size: 20px;
+        margin-bottom: 20px;
+     }
+       @media (min-aspect-ratio:16/9) {
+         .background-clip{
+            width: 100%;
+            height: auto;
+         }
+       }
+       @media (max-aspect-ratio) {
+        .background-clip{
+            width: auto;
+            height: 100%;
+        }
+       }
+    }
+    @media screen and (min-width:1550px){
+        .intro p{
+            font-size: 23px;
+        }
+        .navbar{
+            display: flex;
+            gap: 130px;
+            margin-top: 40px;
+            margin-left: 70px;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .navlink{
+            text-decoration: none;
+            color: black;
+            font-size: 22px;
+        }
+        .button button{
+            color: white;
+            background-color: red;
+            border: none;
+            padding:10px 20px;
+            border-radius: 50px;
+            font-size: 17px;
+            transition: 0.3s;
+        }
+        .button button:hover{
+            background-color: black;
+            color: white;
+        }
+       .herosection{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+       }
+       .heroinfo{
+        text-align: center;
+        color: white;
+       }
+       .heroinfo h1{
+        font-size: 65px;
+       }
+       .heroinfo p{
+        font-size: 30px;
+       }
+       .background-clip{
+        position: absolute;
+        top: 40px;
+        bottom: 0;
+        z-index: -1;
+        margin-top: 250px;
+        width: 100%;
+       }
+       .herolink a{
+        font-size: 18px;
+        text-decoration: none;
+        color: white;
+        border: 2px solid white;
+        padding: 7px 20px;
+        border-radius: 50px;
+        transition: 0.3s;
+    }
+    .aboutinfo{
+        margin: 0px 30px;
+        margin-top: 7000px;
+    }
+    .aboutinfo h2{
+        text-align: center;
+        font-size: 60px;
+    }
+    .aboutinfo p{
+        font-size: 23px;
+    }
+    .about-1{
+        padding: 70px;
+    }
+    .about-1 img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 120px;
+    }
+    .about-1 h5{
+        font-size: 34px;
+    }
+    .about-1 p{
+        font-size: 24px;
+    }
+    .about p{
+        font-size: 50px;
+    }
+    .about .span{
+        font-size: 50px;
+    }
+    .aboutcon{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        padding:0 20px;
+    }
+    .aboutinfo2{
+        width: 100%;
+        height: 330px;
+        text-align: center;
+    }
+    .aboutinfo2 h6{
+        font-size: 30px;
+    }
+    .aboutinfo2 p{
+        font-size: 24px;
+        margin-top: 23px;
+    }
+    .aboutinfo3 h6{
+        font-size: 30px;
+    }
+    .aboutinfo3 p{
+        font-size: 24px;
+    }
+    .aboutimg{
+        padding:0 20px;
+    }
+    /* contactsection */
+    .contactsection{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+    .contactinfo1 span{
+        font-size: 33px;
+    }
+    .contactinfo1 h2{
+        font-size: 45px;
+    }
+    .contactinfo1 h5{
+        font-size: 27px;
+    }
+    .contactinfo1 p{
+        font-size: 22px;
+    }
+    .contactinfo2{
+        background-color: white;
+        border: 0.5px solid black;
+        border-radius: 10px;
+        margin: 25px;
+        padding: 30px;
+        font-size: 23px;
+    }
+    .contactinfo2 form{
+        width: 100%;
+    }
+    form input, form textarea{
+        width: 100%;
+        border:0.5px solid black;
+        outline: none;
+        background-color: white;
+        padding: 16px;
+        margin: 16px 0;
+        color: black;
+        border-radius: 6px;
+    }
+    form button{
+        background-color: red;
+        color: white;
+        border: none;
+        padding: 10px;
+        border-radius: 50px;
+        transition: 0.3s;
+        font-size: 17px;
+    }
+    form button:hover{
+        background-color: black;
+        color: white;
+    }
+    .color{
+        color: red;
+    }
+    .footercontainer{
+        display: flex;
+        flex-direction: row;
+    }
+    .footer1 h5{
+        font-size: 25px;
+    }
+    .footer1 p{
+        font-size: 20px;
+    }
+    .footer2 h5{
+        font-size: 25px;
+    }
+    .footer2 p{
+        font-size: 20px;
+    }
+    .footer3{
+        margin-right: 40px;
+    }
+    .footer3 h5{
+        font-size: 25px;
+    }
+    .footer3 p{
+        font-size: 20px;
+        margin-bottom: 20px;
+     }
+       @media (min-aspect-ratio:16/9) {
+         .background-clip{
+            width: 100%;
+            height: auto;
+         }
+       }
+       @media (max-aspect-ratio) {
+        .background-clip{
+            width: auto;
+            height: 100%;
+        }
+       }
+    }
